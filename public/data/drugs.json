@@ -1,0 +1,534 @@
+{
+  "label": "Drugs",
+  "icon": "drug",
+  "count": "6,482",
+  "desc": "Molecule-level intelligence from discovery through loss of exclusivity",
+  "filters": [
+    "Molecule Type: Small molecule + mAb",
+    "Phase: III – Marketed",
+    "Region: Global"
+  ],
+  "views": {
+    "basic": {
+      "label": "Basic",
+      "cols": [
+        "Drug Name",
+        "Molecule Type",
+        "Mechanism of Action",
+        "Lead Indication",
+        "Phase / Status",
+        "Originator",
+        "Country of Origin"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "Monoclonal antibody",
+          "PD-1 checkpoint inhibitor",
+          "NSCLC (2L+)",
+          "Marketed",
+          "Meridian Biotherapeutics",
+          "United States"
+        ],
+        [
+          "Trevocitinib",
+          "Small molecule",
+          "JAK1 inhibitor",
+          "Rheumatoid arthritis",
+          "Marketed",
+          "Solara Pharma",
+          "Switzerland"
+        ],
+        [
+          "Larenavir",
+          "Small molecule",
+          "HIV protease inhibitor",
+          "HIV-1 infection",
+          "Marketed",
+          "NovaGene Sciences",
+          "United States"
+        ],
+        [
+          "Ficrastenib",
+          "Small molecule",
+          "BRAF V600E inhibitor",
+          "Metastatic melanoma",
+          "Phase III",
+          "Cascadia Therapeutics",
+          "Canada"
+        ],
+        [
+          "Belumizumab",
+          "Monoclonal antibody",
+          "IL-5 inhibitor",
+          "Severe eosinophilic asthma",
+          "Marketed",
+          "Ondine Biosciences",
+          "United Kingdom"
+        ],
+        [
+          "Doxaglutide",
+          "Peptide",
+          "GLP-1 receptor agonist",
+          "Type 2 diabetes / obesity",
+          "Phase III",
+          "Arcadia Metabolics",
+          "Denmark"
+        ]
+      ]
+    },
+    "development": {
+      "label": "Drug Development",
+      "cols": [
+        "Drug Name",
+        "Development Phase",
+        "Lead Indication",
+        "Active Trials",
+        "Est. Filing Date",
+        "Risk Score",
+        "Designation"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "Post-marketing (Phase IV)",
+          "1L NSCLC expansion",
+          "4",
+          "Q2 2027",
+          "Low",
+          {
+            "badge": "Fast Track"
+          }
+        ],
+        [
+          "Trevocitinib",
+          "Post-marketing (Phase IV)",
+          "Psoriatic arthritis expansion",
+          "2",
+          "Q4 2026",
+          "Low",
+          "—"
+        ],
+        [
+          "Larenavir",
+          "Post-marketing (Phase IV)",
+          "Pediatric HIV",
+          "1",
+          "Q1 2028",
+          "Moderate",
+          "—"
+        ],
+        [
+          "Ficrastenib",
+          "Phase III",
+          "Metastatic melanoma",
+          "6",
+          "Q3 2027",
+          "Moderate",
+          {
+            "badge": "Priority Review"
+          }
+        ],
+        [
+          "Belumizumab",
+          "Post-marketing (Phase IV)",
+          "Chronic rhinosinusitis",
+          "3",
+          "Q1 2027",
+          "Low",
+          "—"
+        ],
+        [
+          "Doxaglutide",
+          "Phase III",
+          "Obesity (non-diabetic)",
+          "8",
+          "Q4 2027",
+          "Moderate",
+          {
+            "badge": "Fast Track"
+          }
+        ]
+      ]
+    },
+    "regulatory": {
+      "label": "Regulatory",
+      "cols": [
+        "Drug Name",
+        "Agency",
+        "Submission Type",
+        "Submission Date",
+        "Status",
+        "Approval Date",
+        "Orphan Designation"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "FDA",
+          "sBLA — indication expansion",
+          "12 Jan 2026",
+          {
+            "badge": "Under Review"
+          },
+          "—",
+          "No"
+        ],
+        [
+          "Trevocitinib",
+          "EMA",
+          "Type II variation",
+          "03 Nov 2025",
+          {
+            "badge": "Approved"
+          },
+          "18 Feb 2026",
+          "No"
+        ],
+        [
+          "Larenavir",
+          "FDA",
+          "Pediatric sNDA",
+          "22 Aug 2025",
+          {
+            "badge": "Approved"
+          },
+          "14 Jan 2026",
+          "No"
+        ],
+        [
+          "Ficrastenib",
+          "PMDA",
+          "New drug application",
+          "07 Mar 2026",
+          {
+            "badge": "Filed"
+          },
+          "—",
+          "Yes"
+        ],
+        [
+          "Belumizumab",
+          "FDA",
+          "sBLA — new indication",
+          "29 Sep 2025",
+          {
+            "badge": "Approved"
+          },
+          "11 Dec 2025",
+          "No"
+        ],
+        [
+          "Doxaglutide",
+          "EMA",
+          "Marketing authorization",
+          "15 Apr 2026",
+          {
+            "badge": "Under Review"
+          },
+          "—",
+          "No"
+        ]
+      ]
+    },
+    "lifecycle": {
+      "label": "Life Cycle Management",
+      "cols": [
+        "Drug Name",
+        "Lifecycle Stage",
+        "New Indication Filed",
+        "Formulation Change",
+        "Combination Therapy",
+        "Geographic Expansion",
+        "LCM Score"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "Maturity",
+          "Yes — 1L NSCLC",
+          "Subcutaneous formulation",
+          {
+            "badge": "Ongoing"
+          },
+          "LATAM, SE Asia",
+          "8.4 / 10"
+        ],
+        [
+          "Trevocitinib",
+          "Growth",
+          "Yes — Psoriatic arthritis",
+          {
+            "badge": "Formulation change"
+          },
+          "No",
+          "Japan",
+          "7.1 / 10"
+        ],
+        [
+          "Larenavir",
+          "Maturity",
+          "Pediatric label",
+          "No",
+          "Fixed-dose combo",
+          "Sub-Saharan Africa",
+          "6.5 / 10"
+        ],
+        [
+          "Ficrastenib",
+          "Pre-launch",
+          "—",
+          "No",
+          "BRAF + MEK combo",
+          "US, EU5",
+          "7.8 / 10"
+        ],
+        [
+          "Belumizumab",
+          "Growth",
+          "Yes — CRSwNP",
+          "Auto-injector device",
+          "No",
+          "Australia, Canada",
+          "8.0 / 10"
+        ],
+        [
+          "Doxaglutide",
+          "Pre-launch",
+          "Obesity label",
+          "Oral formulation in dev.",
+          "No",
+          "US, EU5, Japan",
+          "8.9 / 10"
+        ]
+      ]
+    },
+    "forecast": {
+      "label": "Sales Forecast",
+      "cols": [
+        "Drug Name",
+        "2026 ($M)",
+        "2027F ($M)",
+        "2028F ($M)",
+        "2030F ($M)",
+        "CAGR",
+        "Peak Year",
+        "Peak Sales ($M)"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "2,140",
+          "2,410",
+          "2,690",
+          "3,120",
+          "7.7%",
+          "2031",
+          "3,340"
+        ],
+        [
+          "Trevocitinib",
+          "1,380",
+          "1,510",
+          "1,640",
+          "1,860",
+          "6.1%",
+          "2030",
+          "1,860"
+        ],
+        [
+          "Larenavir",
+          "860",
+          "880",
+          "905",
+          "940",
+          "1.8%",
+          "2027",
+          "882"
+        ],
+        [
+          "Ficrastenib",
+          "—",
+          "210",
+          "640",
+          "1,480",
+          "n/m",
+          "2032",
+          "2,050"
+        ],
+        [
+          "Belumizumab",
+          "1,020",
+          "1,190",
+          "1,350",
+          "1,640",
+          "9.9%",
+          "2031",
+          "1,720"
+        ],
+        [
+          "Doxaglutide",
+          "—",
+          "180",
+          "980",
+          "3,650",
+          "n/m",
+          "2033",
+          "5,100"
+        ]
+      ]
+    },
+    "patent": {
+      "label": "Patent Expiry",
+      "cols": [
+        "Drug Name",
+        "Composition Patent",
+        "Formulation Patent",
+        "US Exclusivity",
+        "EU SPC Expiry",
+        "Generic Entrants Expected",
+        "LOE Risk"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "2031",
+          "2033",
+          "2032",
+          " 2032",
+          "2–3 biosimilars",
+          {
+            "badge": "Low"
+          }
+        ],
+        [
+          "Trevocitinib",
+          "2027",
+          "2029",
+          "2028",
+          "2028",
+          "5+ generics",
+          {
+            "badge": "High"
+          }
+        ],
+        [
+          "Larenavir",
+          "2026",
+          "2028",
+          "2027",
+          "2026",
+          "4 generics",
+          {
+            "badge": "High"
+          }
+        ],
+        [
+          "Ficrastenib",
+          "2036",
+          "2038",
+          "2037",
+          "2037",
+          "None expected",
+          {
+            "badge": "Low"
+          }
+        ],
+        [
+          "Belumizumab",
+          "2030",
+          "2032",
+          "2031",
+          "2031",
+          "1–2 biosimilars",
+          {
+            "badge": "Moderate"
+          }
+        ],
+        [
+          "Doxaglutide",
+          "2035",
+          "2037",
+          "2036",
+          "2036",
+          "None expected",
+          {
+            "badge": "Low"
+          }
+        ]
+      ]
+    },
+    "manufacturing": {
+      "label": "Manufacturing",
+      "cols": [
+        "Drug Name",
+        "Manufacturing Site",
+        "Location",
+        "Manufacturer Type",
+        "Capacity (units/yr)",
+        "Platform",
+        "Last Inspection"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "Meridian Biologics Campus",
+          "Boston, US",
+          "In-house",
+          "4.2M vials",
+          {
+            "badge": "Ongoing"
+          },
+          "FDA — Sep 2025, no 483"
+        ],
+        [
+          "Trevocitinib",
+          "Solara API Plant 2",
+          "Basel, CH",
+          "In-house",
+          "18M tablets",
+          "Small molecule",
+          "EMA — Nov 2025, minor obs."
+        ],
+        [
+          "Larenavir",
+          "NovaGene CMO Network",
+          "Hyderabad, IN",
+          {
+            "badge": "Ongoing"
+          },
+          "26M tablets",
+          "Small molecule",
+          "FDA — Jun 2025, no 483"
+        ],
+        [
+          "Ficrastenib",
+          "Cascadia Fill/Finish",
+          "Toronto, CA",
+          "In-house",
+          "—",
+          "Small molecule",
+          "Pre-approval inspection scheduled"
+        ],
+        [
+          "Belumizumab",
+          "Ondine Biologics Suite",
+          "Cambridge, UK",
+          "In-house",
+          "2.8M pens",
+          "Biologics",
+          "MHRA — Jan 2026, no findings"
+        ],
+        [
+          "Doxaglutide",
+          "Arcadia Peptide Plant",
+          "Copenhagen, DK",
+          "In-house",
+          "—",
+          "Peptide synthesis",
+          "Pre-approval inspection scheduled"
+        ]
+      ]
+    }
+  }
+}

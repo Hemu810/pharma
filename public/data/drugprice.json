@@ -1,0 +1,87 @@
+{
+  "label": "Drug Price",
+  "icon": "price",
+  "count": "9,140",
+  "desc": "List and net pricing across 68 markets, tracked to weekly source updates",
+  "filters": [
+    "Country: US, EU5, Japan",
+    "Price Basis: WAC / Ex-factory"
+  ],
+  "views": {
+    "overview": {
+      "label": "Overview",
+      "cols": [
+        "Drug Name",
+        "Country",
+        "List Price (WAC)",
+        "Net Price (Est.)",
+        "Currency",
+        "Dosage Form",
+        "Price / Unit",
+        "Last Updated"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "United States",
+          "9,850",
+          "7,120",
+          "USD",
+          "IV infusion, 400mg",
+          "per vial",
+          "03 Jul 2026"
+        ],
+        [
+          "Trevocitinib",
+          "Germany",
+          "1,240",
+          "980",
+          "EUR",
+          "Oral tablet, 5mg",
+          "per 28-tab pack",
+          "01 Jul 2026"
+        ],
+        [
+          "Larenavir",
+          "United States",
+          "640",
+          "510",
+          "USD",
+          "Oral tablet, 400mg",
+          "per 30-tab pack",
+          "28 Jun 2026"
+        ],
+        [
+          "Belumizumab",
+          "United Kingdom",
+          "1,180",
+          "890",
+          "GBP",
+          "Subcutaneous pen, 100mg",
+          "per pen",
+          "30 Jun 2026"
+        ],
+        [
+          "Doxaglutide",
+          "Japan",
+          "62,400",
+          "54,100",
+          "JPY",
+          "Injectable pen, 2mg",
+          "per pen",
+          "02 Jul 2026"
+        ],
+        [
+          "Ficrastenib",
+          "France",
+          "2,860",
+          "2,105",
+          "EUR",
+          "Oral tablet, 240mg",
+          "per 60-tab pack",
+          "29 Jun 2026"
+        ]
+      ]
+    }
+  }
+}

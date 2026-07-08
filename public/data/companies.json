@@ -1,0 +1,228 @@
+{
+  "label": "Companies",
+  "icon": "company",
+  "count": "318",
+  "desc": "Corporate profiles, financial performance and forecast models",
+  "filters": [
+    "Region: Global Top 50",
+    "Therapeutic Focus: Oncology + Immunology"
+  ],
+  "views": {
+    "basic": {
+      "label": "Basic Info",
+      "cols": [
+        "Company",
+        "HQ Country",
+        "Founded",
+        "Employees",
+        "Therapeutic Focus",
+        "Pipeline Assets",
+        "Ticker"
+      ],
+      "rows": [
+        [
+          "Meridian Biotherapeutics",
+          "United States",
+          "1998",
+          "12,400",
+          "Oncology, Immunology",
+          "48",
+          "MRBT"
+        ],
+        [
+          "Solara Pharma",
+          "Switzerland",
+          "1985",
+          "9,800",
+          "Immunology, Inflammation",
+          "31",
+          "SLRA"
+        ],
+        [
+          "NovaGene Sciences",
+          "United States",
+          "2004",
+          "6,200",
+          "Infectious Disease, Gene Therapy",
+          "27",
+          "NVGN"
+        ],
+        [
+          "Cascadia Therapeutics",
+          "Canada",
+          "2011",
+          "3,100",
+          "Oncology",
+          "19",
+          "CSCD"
+        ],
+        [
+          "Ondine Biosciences",
+          "United Kingdom",
+          "1992",
+          "7,500",
+          "Respiratory, Immunology",
+          "24",
+          "ONDB"
+        ],
+        [
+          "Arcadia Metabolics",
+          "Denmark",
+          "1979",
+          "14,900",
+          "Metabolic, Endocrine",
+          "22",
+          "ARCM"
+        ]
+      ]
+    },
+    "financials": {
+      "label": "Financials",
+      "cols": [
+        "Company",
+        "Fiscal Year",
+        "Total Revenue ($M)",
+        "R&D Spend ($M)",
+        "Net Income ($M)",
+        "Market Cap ($B)",
+        "YoY Growth"
+      ],
+      "rows": [
+        [
+          "Meridian Biotherapeutics",
+          "FY2025",
+          "18,240",
+          "4,120",
+          "3,610",
+          "92.4",
+          "+6.8%"
+        ],
+        [
+          "Solara Pharma",
+          "FY2025",
+          "14,680",
+          "2,980",
+          "2,540",
+          "71.2",
+          "+5.1%"
+        ],
+        [
+          "NovaGene Sciences",
+          "FY2025",
+          "9,150",
+          "2,410",
+          "1,180",
+          "38.6",
+          "+8.9%"
+        ],
+        [
+          "Cascadia Therapeutics",
+          "FY2025",
+          "3,420",
+          "1,150",
+          "-210",
+          "12.8",
+          "+14.2%"
+        ],
+        [
+          "Ondine Biosciences",
+          "FY2025",
+          "7,860",
+          "1,640",
+          "1,420",
+          "29.4",
+          "+3.7%"
+        ],
+        [
+          "Arcadia Metabolics",
+          "FY2025",
+          "21,500",
+          "3,340",
+          "5,980",
+          "118.7",
+          "+11.4%"
+        ]
+      ]
+    },
+    "revenueforecast": {
+      "label": "Revenue Forecast Models",
+      "cols": [
+        "Company",
+        "Lead Product",
+        "2026 Rev ($M)",
+        "2030F Rev ($M)",
+        "CAGR",
+        "Model Confidence",
+        "Key Drivers"
+      ],
+      "rows": [
+        [
+          "Meridian Biotherapeutics",
+          "Zomarlimab",
+          "2,140",
+          "3,340",
+          "9.3%",
+          {
+            "badge": "High"
+          },
+          "1L NSCLC expansion, biosimilar delay"
+        ],
+        [
+          "Solara Pharma",
+          "Trevocitinib",
+          "1,380",
+          "1,860",
+          "6.1%",
+          {
+            "badge": "High"
+          },
+          "PsA label, JAK-class pricing pressure"
+        ],
+        [
+          "NovaGene Sciences",
+          "Larenavir",
+          "860",
+          "940",
+          "1.8%",
+          {
+            "badge": "Moderate"
+          },
+          "Generic erosion post-2027"
+        ],
+        [
+          "Cascadia Therapeutics",
+          "Ficrastenib",
+          "—",
+          "1,480",
+          "n/m",
+          {
+            "badge": "Moderate"
+          },
+          "Phase III readout, combo uptake"
+        ],
+        [
+          "Ondine Biosciences",
+          "Belumizumab",
+          "1,020",
+          "1,640",
+          "9.9%",
+          {
+            "badge": "High"
+          },
+          "CRSwNP expansion, auto-injector"
+        ],
+        [
+          "Arcadia Metabolics",
+          "Doxaglutide",
+          "—",
+          "3,650",
+          "n/m",
+          {
+            "badge": "High"
+          },
+          "Obesity approval, oral formulation"
+        ]
+      ]
+    }
+  }
+}

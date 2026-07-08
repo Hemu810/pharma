@@ -1,0 +1,97 @@
+{
+  "label": "International Reference Pricing",
+  "icon": "irp",
+  "count": "2,240",
+  "desc": "Cross-market reference baskets and price ratio analysis",
+  "filters": [
+    "Reference Basket: EU4 + Canada + Australia"
+  ],
+  "views": {
+    "overview": {
+      "label": "Overview",
+      "cols": [
+        "Drug Name",
+        "Reference Basket",
+        "Lowest Ref. Price",
+        "Highest Ref. Price",
+        "Median Ref. Price",
+        "US List Price",
+        "US / Intl Median Ratio"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "DE, FR, UK, CA, AU",
+          "$6,180 (UK)",
+          "$8,940 (DE)",
+          "$7,410",
+          "$9,850",
+          {
+            "badge": "High",
+            "suffix": " 1.33×"
+          }
+        ],
+        [
+          "Trevocitinib",
+          "DE, FR, UK, CA, AU",
+          "$820 (FR)",
+          "$1,180 (CA)",
+          "$1,020",
+          "$1,340",
+          {
+            "badge": "High",
+            "suffix": " 1.31×"
+          }
+        ],
+        [
+          "Larenavir",
+          "DE, FR, UK, CA, AU",
+          "$410 (FR)",
+          "$610 (AU)",
+          "$505",
+          "$640",
+          {
+            "badge": "Moderate",
+            "suffix": " 1.27×"
+          }
+        ],
+        [
+          "Belumizumab",
+          "DE, FR, UK, CA, AU",
+          "$780 (UK)",
+          "$1,140 (DE)",
+          "$960",
+          "$1,480",
+          {
+            "badge": "High",
+            "suffix": " 1.54×"
+          }
+        ],
+        [
+          "Doxaglutide",
+          "DE, FR, UK, CA, AU",
+          "$410 (UK)",
+          "$690 (CA)",
+          "$540",
+          "$980",
+          {
+            "badge": "High",
+            "suffix": " 1.81×"
+          }
+        ],
+        [
+          "Ficrastenib",
+          "DE, FR, UK, CA, AU",
+          "$2,240 (FR)",
+          "$3,010 (CA)",
+          "$2,610",
+          "$3,340",
+          {
+            "badge": "Moderate",
+            "suffix": " 1.28×"
+          }
+        ]
+      ]
+    }
+  }
+}

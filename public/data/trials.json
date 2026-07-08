@@ -1,0 +1,456 @@
+{
+  "label": "Clinical Trials",
+  "icon": "trial",
+  "count": "2,915",
+  "desc": "Trial design, sites, investigators, biomarkers and safety signals",
+  "filters": [
+    "Status: Recruiting + Active",
+    "Phase: II – III"
+  ],
+  "views": {
+    "basic": {
+      "label": "Basic",
+      "cols": [
+        "Trial ID",
+        "Title",
+        "Phase",
+        "Status",
+        "Sponsor",
+        "Indication",
+        "Start Date",
+        "Enrollment"
+      ],
+      "rows": [
+        [
+          "GCT-2025-0142",
+          "ZOMA-EXPAND: Zomarlimab in 1L NSCLC",
+          "Phase III",
+          {
+            "badge": "Recruiting"
+          },
+          "Meridian Biotherapeutics",
+          "NSCLC",
+          "14 Feb 2025",
+          "640"
+        ],
+        [
+          "GCT-2024-0871",
+          "TREVO-PsA: Trevocitinib in psoriatic arthritis",
+          "Phase III",
+          {
+            "badge": "Active"
+          },
+          "Solara Pharma",
+          "Psoriatic arthritis",
+          "02 Jun 2024",
+          "420"
+        ],
+        [
+          "GCT-2023-0299",
+          "LAREN-Peds: Larenavir pediatric dosing",
+          "Phase II",
+          {
+            "badge": "Active"
+          },
+          "NovaGene Sciences",
+          "Pediatric HIV",
+          "19 Sep 2023",
+          "180"
+        ],
+        [
+          "GCT-2025-0410",
+          "FICRA-COMBO: Ficrastenib + MEK inhibitor",
+          "Phase III",
+          {
+            "badge": "Recruiting"
+          },
+          "Cascadia Therapeutics",
+          "Metastatic melanoma",
+          "05 Jan 2026",
+          "510"
+        ],
+        [
+          "GCT-2024-1055",
+          "BELUM-CRS: Belumizumab in CRSwNP",
+          "Phase III",
+          {
+            "badge": "Active"
+          },
+          "Ondine Biosciences",
+          "Chronic rhinosinusitis",
+          "21 Mar 2024",
+          "360"
+        ],
+        [
+          "GCT-2025-0733",
+          "DOXA-OB: Doxaglutide in non-diabetic obesity",
+          "Phase III",
+          {
+            "badge": "Recruiting"
+          },
+          "Arcadia Metabolics",
+          "Obesity",
+          "30 Apr 2025",
+          "1,240"
+        ]
+      ]
+    },
+    "results": {
+      "label": "Trial Results",
+      "cols": [
+        "Trial ID",
+        "Primary Endpoint",
+        "Result",
+        "Efficacy Metric",
+        "p-value",
+        "Publication",
+        "Readout Date"
+      ],
+      "rows": [
+        [
+          "GCT-2022-0087",
+          "PFS vs. chemotherapy",
+          {
+            "badge": "Met"
+          },
+          "HR 0.61",
+          "p<0.001",
+          "J. Clin Oncol, 2025",
+          "11 Oct 2025"
+        ],
+        [
+          "GCT-2021-0453",
+          "ACR20 response at Wk 24",
+          {
+            "badge": "Met"
+          },
+          "71% vs 44%",
+          "p<0.001",
+          "Lancet Rheum, 2024",
+          "04 Aug 2024"
+        ],
+        [
+          "GCT-2020-0198",
+          "Virologic suppression at Wk 48",
+          {
+            "badge": "Met"
+          },
+          "94% vs 91%",
+          "p=0.04",
+          "NEJM, 2023",
+          "19 Dec 2023"
+        ],
+        [
+          "GCT-2019-0655",
+          "Objective response rate",
+          "Interim — pending",
+          "58%",
+          "—",
+          "Not yet published",
+          "Q3 2026 (est.)"
+        ],
+        [
+          "GCT-2022-0876",
+          "Reduction in nasal polyp score",
+          {
+            "badge": "Met"
+          },
+          "-2.1 vs -0.3",
+          "p<0.001",
+          "JAMA, 2025",
+          "22 May 2025"
+        ],
+        [
+          "GCT-2024-0122",
+          "% body weight reduction at Wk 68",
+          "Interim — on track",
+          "16.8%",
+          "—",
+          "Not yet published",
+          "Q2 2027 (est.)"
+        ]
+      ]
+    },
+    "sites": {
+      "label": "Clinical Sites",
+      "cols": [
+        "Site ID",
+        "Site Name",
+        "Country",
+        "City",
+        "Active Trials",
+        "Principal Investigator",
+        "Recruitment Status"
+      ],
+      "rows": [
+        [
+          "SITE-4471",
+          "Meridian Cancer Institute",
+          "United States",
+          "Boston",
+          "3",
+          "Dr. Elena Kovac",
+          {
+            "badge": "Recruiting"
+          }
+        ],
+        [
+          "SITE-3382",
+          "St. Alban's University Hospital",
+          "United Kingdom",
+          "Manchester",
+          "2",
+          "Dr. James Okonkwo",
+          {
+            "badge": "Recruiting"
+          }
+        ],
+        [
+          "SITE-2210",
+          "Nordic Metabolic Research Center",
+          "Denmark",
+          "Copenhagen",
+          "4",
+          "Dr. Freja Lindqvist",
+          {
+            "badge": "Active"
+          }
+        ],
+        [
+          "SITE-5561",
+          "Kinabalu Regional Medical Center",
+          "Malaysia",
+          "Kuching",
+          "1",
+          "Dr. Amara Tan",
+          {
+            "badge": "Recruiting"
+          }
+        ],
+        [
+          "SITE-1187",
+          "Cascadia Oncology Group",
+          "Canada",
+          "Toronto",
+          "2",
+          "Dr. Marcus Webb",
+          {
+            "badge": "Active"
+          }
+        ],
+        [
+          "SITE-6602",
+          "Deccan Infectious Disease Institute",
+          "India",
+          "Hyderabad",
+          "3",
+          "Dr. Priya Raman",
+          {
+            "badge": "Recruiting"
+          }
+        ]
+      ]
+    },
+    "investigators": {
+      "label": "Principal Investigators",
+      "cols": [
+        "PI Name",
+        "Institution",
+        "Country",
+        "Therapeutic Area",
+        "Active Trials",
+        "Total Trials (career)",
+        "Publications"
+      ],
+      "rows": [
+        [
+          "Dr. Elena Kovac",
+          "Meridian Cancer Institute",
+          "United States",
+          "Oncology",
+          "5",
+          "38",
+          "112"
+        ],
+        [
+          "Dr. James Okonkwo",
+          "St. Alban's University Hospital",
+          "United Kingdom",
+          "Immunology / Rheumatology",
+          "3",
+          "22",
+          "64"
+        ],
+        [
+          "Dr. Freja Lindqvist",
+          "Nordic Metabolic Research Center",
+          "Denmark",
+          "Endocrinology / Metabolic",
+          "6",
+          "29",
+          "88"
+        ],
+        [
+          "Dr. Amara Tan",
+          "Kinabalu Regional Medical Center",
+          "Malaysia",
+          "Infectious Disease",
+          "2",
+          "14",
+          "31"
+        ],
+        [
+          "Dr. Marcus Webb",
+          "Cascadia Oncology Group",
+          "Canada",
+          "Oncology",
+          "4",
+          "26",
+          "77"
+        ],
+        [
+          "Dr. Priya Raman",
+          "Deccan Infectious Disease Institute",
+          "India",
+          "Infectious Disease",
+          "5",
+          "33",
+          "95"
+        ]
+      ]
+    },
+    "biomarkers": {
+      "label": "Biomarkers",
+      "cols": [
+        "Biomarker",
+        "Type",
+        "Associated Trials",
+        "Associated Drug",
+        "Indication",
+        "Predictive / Prognostic"
+      ],
+      "rows": [
+        [
+          "PD-L1 expression (TPS ≥50%)",
+          "Protein / IHC",
+          "9",
+          "Zomarlimab",
+          "NSCLC",
+          "Predictive"
+        ],
+        [
+          "JAK/STAT pathway activity",
+          "Genomic",
+          "4",
+          "Trevocitinib",
+          "Rheumatoid arthritis",
+          "Prognostic"
+        ],
+        [
+          "HIV viral load (RNA copies/mL)",
+          "Molecular",
+          "6",
+          "Larenavir",
+          "HIV-1 infection",
+          "Predictive"
+        ],
+        [
+          "BRAF V600E mutation",
+          "Genomic",
+          "5",
+          "Ficrastenib",
+          "Metastatic melanoma",
+          "Predictive"
+        ],
+        [
+          "Blood eosinophil count",
+          "Hematologic",
+          "7",
+          "Belumizumab",
+          "Severe asthma",
+          "Predictive"
+        ],
+        [
+          "HbA1c / fasting glucose",
+          "Metabolic",
+          "8",
+          "Doxaglutide",
+          "Type 2 diabetes",
+          "Prognostic"
+        ]
+      ]
+    },
+    "adverse": {
+      "label": "Adverse Events",
+      "cols": [
+        "Trial ID",
+        "Drug Name",
+        "Adverse Event",
+        "CTCAE Grade",
+        "Frequency",
+        "Serious",
+        "System Organ Class"
+      ],
+      "rows": [
+        [
+          "GCT-2025-0142",
+          "Zomarlimab",
+          "Immune-mediated pneumonitis",
+          "Grade 3",
+          "3.2%",
+          {
+            "badge": "Serious"
+          },
+          "Respiratory"
+        ],
+        [
+          "GCT-2024-0871",
+          "Trevocitinib",
+          "Upper respiratory infection",
+          "Grade 1",
+          "14.5%",
+          "No",
+          "Infections"
+        ],
+        [
+          "GCT-2023-0299",
+          "Larenavir",
+          "Nausea",
+          "Grade 1",
+          "9.8%",
+          "No",
+          "Gastrointestinal"
+        ],
+        [
+          "GCT-2025-0410",
+          "Ficrastenib",
+          "Cutaneous squamous cell carcinoma",
+          "Grade 2",
+          "2.1%",
+          {
+            "badge": "Serious"
+          },
+          "Skin / Dermatologic"
+        ],
+        [
+          "GCT-2024-1055",
+          "Belumizumab",
+          "Injection site reaction",
+          "Grade 1",
+          "6.4%",
+          "No",
+          "General disorders"
+        ],
+        [
+          "GCT-2025-0733",
+          "Doxaglutide",
+          "Gastrointestinal discomfort",
+          "Grade 2",
+          "21.3%",
+          "No",
+          "Gastrointestinal"
+        ]
+      ]
+    }
+  }
+}

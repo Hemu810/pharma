@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Oncology Phase III · mAbs",
+    "query": "Indication=Oncology AND Phase=III OR Molecule=mAb",
+    "savedOn": "Jul 5, 2026",
+    "historical": false,
+    "target": { "moduleKey": "drugs", "openBuilder": true }
+  },
+  {
+    "id": 2,
+    "title": "Patent cliffs before 2028",
+    "query": "LOE Risk=High AND Composition Patent<2028",
+    "savedOn": "Jul 2, 2026",
+    "historical": false,
+    "target": { "moduleKey": "drugs", "viewKey": "patent" }
+  },
+  {
+    "id": 3,
+    "title": "US vs EU5 pricing gap >50%",
+    "query": "US/Intl Price Ratio>1.5",
+    "savedOn": "Jun 28, 2026",
+    "historical": false,
+    "target": { "moduleKey": "irp" }
+  },
+  {
+    "id": 4,
+    "title": "Phase II immunology trials, US sites",
+    "query": "Indication=Immunology AND Phase=II AND Country=US",
+    "savedOn": "May 14, 2026",
+    "historical": true,
+    "target": { "moduleKey": "trials" }
+  },
+  {
+    "id": 5,
+    "title": "Companies with negative net income",
+    "query": "Net Income<0",
+    "savedOn": "Apr 30, 2026",
+    "historical": true,
+    "target": { "moduleKey": "companies", "viewKey": "financials" }
+  }
+]

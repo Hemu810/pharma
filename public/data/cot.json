@@ -1,0 +1,80 @@
+{
+  "label": "Cost of Therapy",
+  "icon": "cot",
+  "count": "4,760",
+  "desc": "Annualized and per-course treatment cost benchmarking by market and payer",
+  "filters": [
+    "Payer Type: Commercial + Government",
+    "Country: Top 15 markets"
+  ],
+  "views": {
+    "overview": {
+      "label": "Overview",
+      "cols": [
+        "Drug Name",
+        "Indication",
+        "Annual Cost of Therapy",
+        "Country",
+        "Payer Type",
+        "Cost / Course",
+        "Comparator Cost"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "NSCLC (2L+)",
+          "$128,400",
+          "United States",
+          "Commercial",
+          "$10,700 / cycle",
+          "$96,200 (comparator mAb)"
+        ],
+        [
+          "Trevocitinib",
+          "Rheumatoid arthritis",
+          "€11,760",
+          "Germany",
+          "Government (GKV)",
+          "€980 / month",
+          "€13,400 (biologic comparator)"
+        ],
+        [
+          "Larenavir",
+          "HIV-1 infection",
+          "$7,680",
+          "United States",
+          "Government (Medicaid)",
+          "$640 / month",
+          "$8,900 (comparator regimen)"
+        ],
+        [
+          "Belumizumab",
+          "Severe asthma",
+          "£10,680",
+          "United Kingdom",
+          "NHS",
+          "£890 / month",
+          "£9,200 (comparator biologic)"
+        ],
+        [
+          "Doxaglutide",
+          "Obesity",
+          "¥748,800",
+          "Japan",
+          "Commercial",
+          "¥62,400 / month",
+          "¥612,000 (comparator GLP-1)"
+        ],
+        [
+          "Ficrastenib",
+          "Metastatic melanoma",
+          "€34,320",
+          "France",
+          "Government (Sécu)",
+          "€2,860 / month",
+          "€41,600 (comparator combo)"
+        ]
+      ]
+    }
+  }
+}
