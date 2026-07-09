@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-// `filters` is the module's default filter-chip set (from data/modules.js).
+// `filters` is the module's default filter-chip set (fetched via services/api.js).
 // We copy it into local state so the user can remove chips per-module without
 // mutating the shared data, and reset that local copy whenever the module changes.
 export default function FilterBar({ filters, onAddFilter }) {

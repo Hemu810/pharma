@@ -5,6 +5,7 @@ import { fetchAllModules } from './services/api.js';
 
 import TopNav from './components/TopNav.jsx';
 import Home from './components/Home.jsx';
+import Reports from './components/Reports.jsx';
 import SearchBuilder from './components/SearchBuilder.jsx';
 import SearchFieldsModal from './components/SearchFieldsModal.jsx';
 import SubTabs from './components/SubTabs.jsx';
@@ -14,10 +15,12 @@ import DataTable from './components/DataTable.jsx';
 import AIPanel from './components/AIPanel.jsx';
 import CustomExportModal from './components/CustomExportModal.jsx';
 import AIExportModal from './components/AIExportModal.jsx';
+import AskAnalystModal from './components/AskAnalystModal.jsx';
 import Analytics from './components/Analytics.jsx';
 import Toast from './components/Toast.jsx';
 import { useToast } from './hooks/useToast.js';
 import { buildCriteriaSummary } from './utils/searchSummary.js';
+import { REPORTS_CATEGORIES, REPORTS_BASE_LABELS } from './data/reportsCategories.jsx';
 
 const DEFAULT_CONDITIONS = [
   { field: 'Indication', op: '=', value: 'Oncology' },
@@ -25,10 +28,10 @@ const DEFAULT_CONDITIONS = [
   { field: 'Molecule Type', op: '=', value: 'Monoclonal antibody', join: 'OR' },
 ];
 
-const MODULE_KEYS = NAV_ORDER.flatMap((g) => g.items);
+const MODULE_KEYS = [...NAV_ORDER.flatMap((g) => g.items), 'reports'];
 
 export default function App() {
-  // 'home' | 'module' | 'analytics' — which top-level page is showing
+  // 'home' | 'module' | 'analytics' | 'reportsHome' — which top-level page is showing
   const [page, setPage] = useState('home');
 
   const [modules, setModules] = useState(null);
@@ -36,6 +39,7 @@ export default function App() {
 
   const [moduleKey, setModuleKey] = useState('drugs');
   const [viewKey, setViewKey] = useState('basic');
+  const [reportContext, setReportContext] = useState(null); // { catKey, catLabel, itemLabel, viewKey }
 
   const [hiddenCols, setHiddenCols] = useState(new Set());
   const [builderOpen, setBuilderOpen] = useState(false);
@@ -47,6 +51,7 @@ export default function App() {
   const [customExportOpen, setCustomExportOpen] = useState(false);
   const [aiExportOpen, setAiExportOpen] = useState(false);
   const [aiExportSeedQuery, setAiExportSeedQuery] = useState('Summarize this result set by phase and indication.');
+  const [askAnalystOpen, setAskAnalystOpen] = useState(false);
 
   const { message, showToast } = useToast();
 
@@ -64,7 +69,15 @@ export default function App() {
     };
   }, []);
 
-  const activeModule = modules?.[moduleKey];
+  const baseModule = modules?.[moduleKey];
+  const isReportView = moduleKey === 'reports' && reportContext;
+  const activeModule = isReportView
+    ? {
+        ...baseModule,
+        desc: `${REPORTS_BASE_LABELS[reportContext.viewKey]} filtered to ${reportContext.catLabel}: ${reportContext.itemLabel}`,
+        filters: [`${reportContext.catLabel}: ${reportContext.itemLabel}`],
+      }
+    : baseModule;
   const activeView = activeModule?.views[viewKey];
   const ModuleIcon = activeModule ? ICONS[activeModule.icon] : null;
 
@@ -75,13 +88,24 @@ export default function App() {
 
   const goHome = () => setPage('home');
   const goAnalytics = () => setPage('analytics');
+  const goReports = () => setPage('reportsHome');
 
   const selectModule = (key, opts) => {
     setModuleKey(key);
     setViewKey(Object.keys(modules[key].views)[0]);
     setHiddenCols(new Set());
     setPage('module');
+    if (key !== 'reports') setReportContext(null);
     if (opts?.openBuilder) setBuilderOpen(true);
+  };
+
+  const openReportView = (catKey, itemLabel) => {
+    const cat = REPORTS_CATEGORIES[catKey];
+    setModuleKey('reports');
+    setViewKey(cat.viewKey);
+    setHiddenCols(new Set());
+    setReportContext({ catKey, catLabel: cat.label, itemLabel, viewKey: cat.viewKey });
+    setPage('module');
   };
 
   const selectView = (key) => {
@@ -120,11 +144,6 @@ export default function App() {
     setAiExportOpen(true);
   };
 
-  const openAskAIFromNav = () => {
-    if (page !== 'module') selectModule('drugs');
-    setAiPanelOpen(true);
-  };
-
   if (modulesError) {
     return (
       <div className="app">
@@ -152,10 +171,11 @@ export default function App() {
         currentModuleKey={moduleKey}
         homeActive={page === 'home'}
         analyticsActive={page === 'analytics'}
+        reportsActive={page === 'reportsHome' || (page === 'module' && moduleKey === 'reports')}
         onShowHome={goHome}
-        onShowAnalytics={goAnalytics}
+        onShowReports={goReports}
         onSelectModule={selectModule}
-        onOpenAskAI={openAskAIFromNav}
+        onOpenAskAnalyst={() => setAskAnalystOpen(true)}
         showToast={showToast}
       />
 
@@ -174,9 +194,25 @@ export default function App() {
 
         {page === 'analytics' && <Analytics modules={modules} />}
 
+        {page === 'reportsHome' && <Reports onOpenReportView={openReportView} />}
+
         {page === 'module' && (
           <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }}>
             <div className="topbar">
+              {isReportView && (
+                <div style={{ marginBottom: 8 }}>
+                  <a
+                    href="#"
+                    className="back-to-reports"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      goReports();
+                    }}
+                  >
+                    ← Back to Reports
+                  </a>
+                </div>
+              )}
               <div className="topbar-title-row">
                 <div className="module-heading">
                   <ModuleIcon />
@@ -264,7 +300,12 @@ export default function App() {
 
             <div className={`content-split ${aiPanelOpen ? 'ai-open' : ''}`}>
               <div className="table-wrap">
-                <DataTable view={activeView} resultCount={activeModule.count} hiddenCols={hiddenCols} />
+                <DataTable
+                  view={activeView}
+                  resultCount={activeModule.count}
+                  hiddenCols={hiddenCols}
+                  resetKey={`${moduleKey}-${viewKey}`}
+                />
               </div>
 
               <AIPanel
@@ -303,6 +344,14 @@ export default function App() {
         initialQuery={aiExportSeedQuery}
         resultCount={activeModule.count}
         onExport={() => showToast('Running AI query across rows and preparing your Excel file…')}
+      />
+
+      <AskAnalystModal
+        open={askAnalystOpen}
+        onClose={() => setAskAnalystOpen(false)}
+        modules={modules}
+        currentModuleKey={moduleKey}
+        showToast={showToast}
       />
 
       <Toast message={message} />

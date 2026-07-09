@@ -1,0 +1,225 @@
+{
+  "label": "Reports",
+  "icon": "analytics",
+  "count": "—",
+  "desc": "Cross-portfolio views by disease, country, or industry trend",
+  "filters": [],
+  "views": {
+    "diseaseView": {
+      "label": "Disease View",
+      "cols": [
+        "Drug Name",
+        "Company",
+        "Phase / Status",
+        "Active Trials",
+        "Approval Status",
+        "Peak Sales Forecast ($M)"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "Meridian Biotherapeutics",
+          "Marketed",
+          "4",
+          {
+            "badge": "Approved"
+          },
+          "3,340"
+        ],
+        [
+          "Trevocitinib",
+          "Solara Pharma",
+          "Marketed",
+          "2",
+          {
+            "badge": "Approved"
+          },
+          "1,860"
+        ],
+        [
+          "Ficrastenib",
+          "Cascadia Therapeutics",
+          "Phase III",
+          "6",
+          {
+            "badge": "Filed"
+          },
+          "2,050"
+        ],
+        [
+          "Belumizumab",
+          "Ondine Biosciences",
+          "Marketed",
+          "3",
+          {
+            "badge": "Approved"
+          },
+          "1,720"
+        ],
+        [
+          "Doxaglutide",
+          "Arcadia Metabolics",
+          "Phase III",
+          "8",
+          {
+            "badge": "Under Review"
+          },
+          "5,100"
+        ],
+        [
+          "Larenavir",
+          "NovaGene Sciences",
+          "Marketed",
+          "1",
+          {
+            "badge": "Approved"
+          },
+          "882"
+        ]
+      ]
+    },
+    "countryView": {
+      "label": "Country View",
+      "cols": [
+        "Drug Name",
+        "Company",
+        "Local Approval Status",
+        "List Price (Local)",
+        "Reimbursement (Y/N)",
+        "Active Trials"
+      ],
+      "rows": [
+        [
+          "Zomarlimab",
+          "Meridian Biotherapeutics",
+          {
+            "badge": "Approved"
+          },
+          "$9,850",
+          "Yes",
+          "3"
+        ],
+        [
+          "Trevocitinib",
+          "Solara Pharma",
+          {
+            "badge": "Approved"
+          },
+          "€1,340",
+          "Yes",
+          "2"
+        ],
+        [
+          "Larenavir",
+          "NovaGene Sciences",
+          {
+            "badge": "Approved"
+          },
+          "$640",
+          {
+            "badge": "Yes"
+          },
+          "1"
+        ],
+        [
+          "Belumizumab",
+          "Ondine Biosciences",
+          {
+            "badge": "Approved"
+          },
+          "£1,480",
+          "Yes",
+          "3"
+        ],
+        [
+          "Doxaglutide",
+          "Arcadia Metabolics",
+          {
+            "badge": "Under Review"
+          },
+          "¥748,800",
+          {
+            "badge": "No"
+          },
+          "6"
+        ],
+        [
+          "Ficrastenib",
+          "Cascadia Therapeutics",
+          {
+            "badge": "Filed"
+          },
+          "€3,340",
+          "Pending",
+          "5"
+        ]
+      ]
+    },
+    "trendView": {
+      "label": "Industry Trend View",
+      "cols": [
+        "Related Drug / Company",
+        "Trend Relevance",
+        "Metric",
+        "Value",
+        "YoY Change"
+      ],
+      "rows": [
+        [
+          "Doxaglutide · Arcadia Metabolics",
+          {
+            "badge": "High"
+          },
+          "Peak sales forecast",
+          "$5,100M",
+          "+41%"
+        ],
+        [
+          "Zomarlimab · Meridian Biotherapeutics",
+          {
+            "badge": "Moderate"
+          },
+          "1L expansion trials",
+          "4 active",
+          "+2"
+        ],
+        [
+          "Trevocitinib · Solara Pharma",
+          {
+            "badge": "High"
+          },
+          "Biosimilar filings tracked",
+          "5 generics",
+          "+3"
+        ],
+        [
+          "Ficrastenib · Cascadia Therapeutics",
+          {
+            "badge": "Moderate"
+          },
+          "Combination trials",
+          "6 active",
+          "+1"
+        ],
+        [
+          "Belumizumab · Ondine Biosciences",
+          {
+            "badge": "Low"
+          },
+          "Auto-injector adoption",
+          "62% of Rx",
+          "+8%"
+        ],
+        [
+          "Larenavir · NovaGene Sciences",
+          {
+            "badge": "Low"
+          },
+          "Generic entrants expected",
+          "4 generics",
+          "flat"
+        ]
+      ]
+    }
+  }
+}

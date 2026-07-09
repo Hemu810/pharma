@@ -42,4 +42,22 @@ export const VALUE_OPTIONS = {
   Designation: ['Director', 'VP', 'C-Suite', 'Manager'],
   'Reimbursement (Y/N)': ['Yes', 'No'],
   Package: ['Vial', 'Pen', 'Tablet pack', 'Infusion bag'],
+  Disease: [
+    'Oncology',
+    'Immunology',
+    'Infectious Disease',
+    'Metabolic Disease',
+    'Respiratory',
+    'Rare Disease',
+    'Cardiovascular',
+    'Neurology',
+  ],
+  'Industry Trend': [
+    'GLP-1 & Metabolic Therapies',
+    'Biosimilar Competition',
+    'Cell & Gene Therapy Access',
+    'AI in Drug Discovery',
+    'Value-Based Pricing',
+    'Patent Cliff Wave 2026–2028',
+  ],
 };

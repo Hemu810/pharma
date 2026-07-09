@@ -66,6 +66,17 @@ export const FIELD_DEFS = {
       {n:'List Price', t:'num'}, {n:'Reference Basket', t:'txt'}, {n:'US / Intl Price Ratio', t:'num'},
     ],
   },
+  reports:{
+    'Scope':[
+      {n:'Disease', t:'enum'}, {n:'Country', t:'enum'}, {n:'Industry Trend', t:'enum'},
+    ],
+    'Identity':[
+      {n:'Drug Name', t:'txt'}, {n:'Company Name', t:'txt'},
+    ],
+    'Metrics':[
+      {n:'Active Trials', t:'num'}, {n:'Peak Sales Forecast ($M)', t:'num'}, {n:'YoY Change', t:'txt'},
+    ],
+  },
 };
 export const FIELD_TYPE_DEFAULT_OP = {txt:'contains', enum:'=', num:'between', date:'between'};
 export const FIELD_TYPE_DEFAULT_VAL = {txt:'(set value)', enum:'(select…)', num:'(set range)', date:'(set range)'};
